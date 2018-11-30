@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/custom_item_type_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/custom_item_date"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:text="최종운동일 : 2018.10.23"
+        app:layout_constraintLeft_toRightOf="@+id/custom_item_type_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/custom_item_title"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="가슴/삼두"
+        app:layout_constraintBottom_toBottomOf="@+id/custom_item_type_image"
+        app:layout_constraintLeft_toRightOf="@+id/custom_item_type_image"
+        app:layout_constraintStart_toEndOf="@+id/custom_item_type_image"
+        app:layout_constraintTop_toBottomOf="@+id/custom_item_date" />
+
+    <ImageView
+        android:id="@+id/custom_item_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
